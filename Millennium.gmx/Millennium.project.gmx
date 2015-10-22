@@ -5,12 +5,26 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_hlina</sprite>
+    <sprite>sprites\spr_hrac_0</sprite>
+    <sprite>sprites\mask_filter</sprite>
+    <sprite>sprites\filter</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\rm_lang</object>
+    <objects name="hlina">
+      <object>objects\obj_hlina</object>
+    </objects>
+    <objects name="hraci">
+      <object>objects\obj_hrac</object>
+    </objects>
+    <object>objects\obj_filter</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_lang</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
