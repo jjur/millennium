@@ -10,6 +10,7 @@
     <sprite>sprites\spr_hrac_0</sprite>
     <sprite>sprites\mask_filter</sprite>
     <sprite>sprites\filter</sprite>
+    <sprite>sprites\spr_mouse_click</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,6 +22,7 @@
       <object>objects\obj_hrac</object>
     </objects>
     <object>objects\obj_filter</object>
+    <object>objects\object3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lang</room>
