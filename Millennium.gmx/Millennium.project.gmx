@@ -29,8 +29,15 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\lang_sk.gml</script>
+    <script>scripts\scr_itempickup.gml</script>
+    <script>scripts\scr_itemdrop.gml</script>
+    <script>scripts\scr_itemcheck.gml</script>
+  </scripts>
   <fonts name="fonts">
-    <font>fonts\font0</font>
+    <font>fonts\fn_h2</font>
+    <font>fonts\fn_inv_num</font>
   </fonts>
   <objects name="objects">
     <objects name="hlina">
@@ -43,14 +50,15 @@
       <object>objects\obj_hlinena_stena</object>
     </objects>
     <objects name="ine">
-      <object>objects\obj_clicked_title</object>
       <object>objects\obj_filter</object>
+      <object>objects\obj_clicked_title</object>
     </objects>
     <object>objects\obj_invent_grav</object>
+    <object>objects\obj_invent</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_invent</room>
     <room>rooms\rm_lang</room>
+    <room>rooms\rm_invent</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
