@@ -24,6 +24,8 @@
       <sprite>sprites\filter</sprite>
       <sprite>sprites\spr_mouse_click</sprite>
     </sprites>
+    <sprite>sprites\spr_slot</sprite>
+    <sprite>sprites\spr_invent_items</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,8 +46,10 @@
       <object>objects\obj_clicked_title</object>
       <object>objects\obj_filter</object>
     </objects>
+    <object>objects\obj_invent_grav</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_invent</room>
     <room>rooms\rm_lang</room>
   </rooms>
   <help>
