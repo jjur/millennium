@@ -6,11 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_hlina</sprite>
-    <sprite>sprites\spr_hrac_0</sprite>
-    <sprite>sprites\mask_filter</sprite>
-    <sprite>sprites\filter</sprite>
-    <sprite>sprites\spr_mouse_click</sprite>
+    <sprites name="masky">
+      <sprite>sprites\mask_filter</sprite>
+    </sprites>
+    <sprites name="sprity">
+      <sprites name="hrac">
+        <sprite>sprites\spr_hrac_0</sprite>
+      </sprites>
+      <sprites name="hliny">
+        <sprite>sprites\spr_hlina</sprite>
+      </sprites>
+      <sprites name="steny">
+        <sprite>sprites\spr_clay_wall</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="ine">
+      <sprite>sprites\filter</sprite>
+      <sprite>sprites\spr_mouse_click</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -24,8 +37,13 @@
     <objects name="hraci">
       <object>objects\obj_hrac</object>
     </objects>
-    <object>objects\obj_filter</object>
-    <object>objects\obj_clicked_title</object>
+    <objects name="steny">
+      <object>objects\obj_hlinena_stena</object>
+    </objects>
+    <objects name="ine">
+      <object>objects\obj_clicked_title</object>
+      <object>objects\obj_filter</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lang</room>
