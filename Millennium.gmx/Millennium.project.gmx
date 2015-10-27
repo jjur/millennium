@@ -19,6 +19,9 @@
       <sprites name="steny">
         <sprite>sprites\spr_clay_wall</sprite>
       </sprites>
+      <sprites name="rebriky">
+        <sprite>sprites\spr_rebrik</sprite>
+      </sprites>
     </sprites>
     <sprites name="ine">
       <sprite>sprites\filter</sprite>
@@ -55,6 +58,10 @@
     </objects>
     <object>objects\obj_invent_grav</object>
     <object>objects\obj_invent</object>
+    <object>objects\object7</object>
+    <objects name="rebriky">
+      <object>objects\obj_rebrik</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lang</room>
