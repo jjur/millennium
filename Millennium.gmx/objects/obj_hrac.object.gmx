@@ -50,14 +50,14 @@
             <kind>1</kind>
             <string>///Ladder
 
-if(place_meeting(x,y,obj_rebrik)){
+/*if(place_meeting(x,y,obj_rebrik)){
     rebrik = false;
        
     }else{
     rebrik = true;
     }
     
-    /* ZALOHA
+*/
     if(place_meeting(x,y,obj_rebrik)){
     vspeed = 0
     gravity = 0
@@ -73,7 +73,7 @@ if(place_meeting(x,y,obj_rebrik)){
     
     
     }
-    */
+    
 </string>
           </argument>
         </arguments>
@@ -95,12 +95,11 @@ if(place_meeting(x,y,obj_rebrik)){
           <argument>
             <kind>1</kind>
             <string>/// Riadenie gravitacie BUG
-if rebrik {
-gravity=0;
-}else{
-if (place_free(x,y+2)==true){
+
+if (place_free(x,y+2)==true) {
 gravity=2;
-}else{
+}
+else{
 gravity=0}
 }
 </string>
