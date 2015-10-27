@@ -48,11 +48,61 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Ladder
+
+if(place_meeting(x,y,obj_rebrik)){
+    rebrik = false;
+       
+    }else{
+    rebrik = true;
+    }
+    
+    /* ZALOHA
+    if(place_meeting(x,y,obj_rebrik)){
+    vspeed = 0
+    gravity = 0
+    if(mouse_check_button_pressed(mb_left)){
+            if(mouse_y&lt;y)vspeed = -2
+                
+                
+        }
+    if(mouse_check_button_pressed(mb_left)){
+            if(mouse_y&gt;y)vspeed = 2
+                
+        }
+    
+    
+    }
+    */
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Riadenie gravitacie BUG
-if place_free(x,y+2)==true{
+if rebrik {
+gravity=0;
+}else{
+if (place_free(x,y+2)==true){
 gravity=2;
 }else{
 gravity=0}
+}
 </string>
           </argument>
         </arguments>
@@ -106,45 +156,6 @@ if (instance_exists(obj_clicked_title)==true){
 }else{
 speed=0;}*/
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-
-//Ladder
-
-if(place_meeting(x,y,obj_rebrik)){
-    vspeed = 0
-    gravity = 0
-    if(mouse_check_button_pressed(mb_left)){
-            if(mouse_y&lt;y)vspeed = -2
-                
-                
-        }
-    if(mouse_check_button_pressed(mb_left)){
-            if(mouse_y&gt;y)vspeed = 2
-                
-        }
-    
-    
-    }
 </string>
           </argument>
         </arguments>
