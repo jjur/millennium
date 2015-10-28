@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>///Ladder
 
-if(place_meeting(x+global.move-63,y+global.move-63,obj_rebrik)){
+if ((direction == 0) and (place_meeting(x+global.move-63,y+global.move-63,obj_rebrik))) or ((direction == 180) and (place_meeting(x+global.move,y+global.move,obj_rebrik))){
     rebrik = true; 
    // move_snap(1,64);
     }else{
