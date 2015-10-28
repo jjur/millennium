@@ -32,7 +32,6 @@
       <sprite>sprites\filter</sprite>
       <sprite>sprites\spr_mouse_click</sprite>
     </sprites>
-<<<<<<< HEAD
     <sprite>sprites\spr_slot</sprite>
     <sprite>sprites\spr_invent_items</sprite>
     <sprites name="menu">
@@ -52,8 +51,6 @@
         <sprite>sprites\spr_hbar</sprite>
       </sprites>
     </sprites>
-=======
->>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <background>background\bgk_options</background>

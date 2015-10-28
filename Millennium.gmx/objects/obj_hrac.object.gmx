@@ -102,13 +102,11 @@ gravity=2;
 }
 else{
 gravity=0}
-<<<<<<< HEAD
 
-=======
 }else{
 gravity=0;
 }
->>>>>>> origin/master
+
 </string>
           </argument>
         </arguments>
