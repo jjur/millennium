@@ -50,14 +50,15 @@
             <kind>1</kind>
             <string>///Ladder
 
-/*if(place_meeting(x,y,obj_rebrik)){
-    rebrik = false;
-       
+if(place_meeting(x+global.move-63,y+global.move-63,obj_rebrik)){
+    rebrik = true; 
+   // move_snap(1,64);
     }else{
-    rebrik = true;
+    rebrik = false;
     }
     
-*/
+    
+/*
     if(place_meeting(x,y,obj_rebrik)){
     vspeed = 0
     gravity = 0
@@ -73,7 +74,7 @@
     
     
     }
-    
+    */
 </string>
           </argument>
         </arguments>
@@ -95,13 +96,19 @@
           <argument>
             <kind>1</kind>
             <string>/// Riadenie gravitacie BUG
-
+if (rebrik !=true) {
 if (place_free(x,y+2)==true) {
 gravity=2;
 }
 else{
 gravity=0}
+<<<<<<< HEAD
 
+=======
+}else{
+gravity=0;
+}
+>>>>>>> origin/master
 </string>
           </argument>
         </arguments>
@@ -124,7 +131,17 @@ gravity=0}
             <kind>1</kind>
             <string>/// Prenasledovanie myši
 if (instance_exists(obj_clicked_title)==true){
-   
+   if (rebrik==true) and ((obj_clicked_title.x+300)&gt;x) and (x&gt;(obj_clicked_title.x-300)) {
+     if (obj_clicked_title.y&gt;y) and (place_free(x,y+global.move)==true){
+           y+=global.move;
+     }else{
+       if (place_free(x,y-global.move)==true){
+          y-=global.move;
+        }}      
+       //move_snap(64,64);
+
+   }else{
+ 
   // y-=7;
    if (obj_clicked_title.x&lt;x){
    if (place_free(x-global.move,y)==true){
@@ -145,7 +162,8 @@ if (instance_exists(obj_clicked_title)==true){
    move_snap(64,64);
    with (obj_clicked_title) { instance_destroy(); } 
 }
-}else{}
+else{}
+}}
 
 /*if (instance_exists(obj_clicked_title)==true){
    move_towards_point(obj_clicked_title.x,y,1);
