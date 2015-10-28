@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprites name="masky">
       <sprite>sprites\mask_filter</sprite>
+      <sprite>sprites\mask_64x64</sprite>
     </sprites>
     <sprites name="sprity">
       <sprites name="hrac">
@@ -22,13 +23,15 @@
       <sprites name="rebriky">
         <sprite>sprites\spr_rebrik</sprite>
       </sprites>
+      <sprites name="gui">
+        <sprite>sprites\spr_slot</sprite>
+        <sprite>sprites\spr_invent_items</sprite>
+      </sprites>
     </sprites>
     <sprites name="ine">
       <sprite>sprites\filter</sprite>
       <sprite>sprites\spr_mouse_click</sprite>
     </sprites>
-    <sprite>sprites\spr_slot</sprite>
-    <sprite>sprites\spr_invent_items</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
