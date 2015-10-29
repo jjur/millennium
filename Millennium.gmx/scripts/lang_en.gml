@@ -1,0 +1,10 @@
+global.txt_button_start = "New game";
+global.txt_button_continue = "Continue";
+global.txt_button_options = "Options";
+global.txt_button_exit = "Exit";
+global.txt_button_save = "Save";
+global.txt_button_close = "Back";
+global.txt_lang_sk = "Slovenčina";
+global.txt_lang_en = "English";
+global.txt_menu_option_title = "Options";
+global.txt_menu_option_lang = "Language";

@@ -32,6 +32,7 @@
           <sprite>sprites\spr_button_bg</sprite>
           <sprite>sprites\spr_button_left</sprite>
           <sprite>sprites\spr_button_right</sprite>
+          <sprite>sprites\spr_button_menu_game</sprite>
         </sprites>
         <sprite>sprites\sprite23</sprite>
         <sprite>sprites\spr_menu_title</sprite>
@@ -40,6 +41,8 @@
           <sprite>sprites\spr_hbar</sprite>
         </sprites>
         <sprite>sprites\spr_language</sprite>
+        <sprite>sprites\spr_menu_options_title</sprite>
+        <sprite>sprites\spr_menu_options</sprite>
       </sprites>
     </sprites>
     <sprites name="ine">
@@ -59,6 +62,8 @@
     <script>scripts\scr_itemcheck.gml</script>
     <script>scripts\scr_buttonBobber.gml</script>
     <script>scripts\scr_saveoption.gml</script>
+    <script>scripts\lang_en.gml</script>
+    <script>scripts\scr_lang_change.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fn_h2</font>
@@ -67,6 +72,8 @@
     <font>fonts\font3</font>
     <font>fonts\font4</font>
     <font>fonts\font_millenium</font>
+    <font>fonts\font_option</font>
+    <font>fonts\font_suboption</font>
   </fonts>
   <objects name="objects">
     <objects name="Buttons">
@@ -103,6 +110,11 @@
     </objects>
     <objects name="Menu">
       <object>objects\obj_title</object>
+      <object>objects\obj_set_lang</object>
+      <objects name="obj_menu">
+        <object>objects\obj_menu_options_title</object>
+        <object>objects\obj_menu_options_lang</object>
+      </objects>
     </objects>
     <object>objects\obj_splash_screen</object>
   </objects>
@@ -112,7 +124,6 @@
     <room>rooms\rm_mainMenu</room>
     <room>rooms\rm_newgame</room>
     <room>rooms\rm_options</room>
-    <room>rooms\rm_sound</room>
     <room>rooms\rm_lang</room>
     <room>rooms\rm_invent</room>
   </rooms>
