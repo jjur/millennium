@@ -18,6 +18,34 @@ global.musicSound = ini_read_real("sound", "music", 50);
 ini_write_real("global", "language", 0)
 ini_close();
 
+var base_w = 1920;
+var base_h = 1080;
+var aspect = base_w / base_h ; // get the GAME aspect ratio
+if (display_get_width() &lt; display_get_height())
+    {
+    //portrait
+    var ww = min(base_w, display_get_width());
+    var hh = ww / aspect;
+    }
+else
+    {
+    //landscape
+    var hh = min(base_h, display_get_height());
+    var ww = hh * aspect;
+    }
+surface_resize(application_surface, ww, hh);
+
+//inicializácia inventára
+globalvar showInv;
+showInv = false;
+globalvar maxItems;
+maxItems = 36;   
+
+for (i=0; i &lt; maxItems; i+=1){
+    global.inventory[i] = -1;
+    global.inventory_num[i] = 0;
+}
+
 room_goto(rm_splash_screen);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

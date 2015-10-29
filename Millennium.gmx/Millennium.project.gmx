@@ -125,7 +125,6 @@
     <room>rooms\rm_newgame</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_lang</room>
-    <room>rooms\rm_invent</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
