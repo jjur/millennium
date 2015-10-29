@@ -27,29 +27,24 @@
         <sprite>sprites\spr_slot</sprite>
         <sprite>sprites\spr_invent_items</sprite>
       </sprites>
+      <sprites name="menu">
+        <sprites name="Buttons">
+          <sprite>sprites\spr_button_bg</sprite>
+          <sprite>sprites\spr_button_left</sprite>
+          <sprite>sprites\spr_button_right</sprite>
+        </sprites>
+        <sprite>sprites\sprite23</sprite>
+        <sprite>sprites\spr_menu_title</sprite>
+        <sprites name="sound">
+          <sprite>sprites\spr_hslider</sprite>
+          <sprite>sprites\spr_hbar</sprite>
+        </sprites>
+        <sprite>sprites\spr_language</sprite>
+      </sprites>
     </sprites>
     <sprites name="ine">
       <sprite>sprites\filter</sprite>
       <sprite>sprites\spr_mouse_click</sprite>
-    </sprites>
-    <sprite>sprites\spr_slot</sprite>
-    <sprite>sprites\spr_invent_items</sprite>
-    <sprites name="menu">
-      <sprites name="Buttons">
-        <sprite>sprites\spr_button_start</sprite>
-        <sprite>sprites\spr_button_continue</sprite>
-        <sprite>sprites\spr_button_options</sprite>
-        <sprite>sprites\spr_button_exit</sprite>
-        <sprite>sprites\spr_button_sound</sprite>
-        <sprite>sprites\spr_button_close</sprite>
-        <sprite>sprites\spr_button_save</sprite>
-        <sprite>sprites\spr_button</sprite>
-      </sprites>
-      <sprite>sprites\spr_menu_title</sprite>
-      <sprites name="sound">
-        <sprite>sprites\spr_hslider</sprite>
-        <sprite>sprites\spr_hbar</sprite>
-      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -63,11 +58,15 @@
     <script>scripts\scr_itemdrop.gml</script>
     <script>scripts\scr_itemcheck.gml</script>
     <script>scripts\scr_buttonBobber.gml</script>
+    <script>scripts\scr_saveoption.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fn_h2</font>
     <font>fonts\fn_inv_num</font>
     <font>fonts\font2</font>
+    <font>fonts\font3</font>
+    <font>fonts\font4</font>
+    <font>fonts\font_millenium</font>
   </fonts>
   <objects name="objects">
     <objects name="Buttons">
@@ -79,16 +78,9 @@
       <object>objects\obj_button_sound</object>
       <object>objects\obj_button_close</object>
       <object>objects\obj_button_save</object>
-    </objects>
-    <objects name="Sliders">
-      <object>objects\obj_hslider_parent</object>
-      <object>objects\obj_hbar_parent</object>
-      <object>objects\obj_hslider_ambient</object>
-      <object>objects\obj_hslider_effect</object>
-      <object>objects\obj_hslider_music</object>
-      <object>objects\obj_hbar_ambient</object>
-      <object>objects\obj_hbar_effect</object>
-      <object>objects\obj_hbar_music</object>
+      <object>objects\obj_button_left</object>
+      <object>objects\obj_language</object>
+      <object>objects\obj_button_right</object>
     </objects>
     <objects name="hlina">
       <object>objects\obj_hlina</object>
@@ -112,14 +104,17 @@
     <objects name="Menu">
       <object>objects\obj_title</object>
     </objects>
+    <object>objects\obj_splash_screen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>
+    <room>rooms\rm_splash_screen</room>
     <room>rooms\rm_mainMenu</room>
+    <room>rooms\rm_newgame</room>
     <room>rooms\rm_options</room>
+    <room>rooms\rm_sound</room>
     <room>rooms\rm_lang</room>
     <room>rooms\rm_invent</room>
-    <room>rooms\rm_sound</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
