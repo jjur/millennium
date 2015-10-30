@@ -3,7 +3,10 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\HOA gGUI - Graphical Interface</extension>
+    <extension index="1">extensions\Simple string input</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="masky">
@@ -44,6 +47,9 @@
         <sprite>sprites\spr_menu_options_title</sprite>
         <sprite>sprites\spr_menu_options</sprite>
       </sprites>
+      <sprites name="new_game">
+        <sprite>sprites\spr_sprite_view</sprite>
+      </sprites>
     </sprites>
     <sprites name="ine">
       <sprite>sprites\filter</sprite>
@@ -64,6 +70,7 @@
     <script>scripts\scr_saveoption.gml</script>
     <script>scripts\lang_en.gml</script>
     <script>scripts\scr_lang_change.gml</script>
+    <script>scripts\scr_color.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fn_h2</font>
@@ -74,19 +81,19 @@
     <font>fonts\font_millenium</font>
     <font>fonts\font_option</font>
     <font>fonts\font_suboption</font>
+    <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
     <objects name="Buttons">
       <object>objects\obj_button_parrent</object>
       <object>objects\obj_button_start</object>
       <object>objects\obj_button_continue</object>
-      <object>objects\obj_button_options</object>
+      <object>objects\obj_button_info</object>
       <object>objects\obj_button_exit</object>
       <object>objects\obj_button_sound</object>
       <object>objects\obj_button_close</object>
       <object>objects\obj_button_save</object>
       <object>objects\obj_button_left</object>
-      <object>objects\obj_language</object>
       <object>objects\obj_button_right</object>
     </objects>
     <objects name="hlina">
@@ -110,21 +117,27 @@
     </objects>
     <objects name="Menu">
       <object>objects\obj_title</object>
-      <object>objects\obj_set_lang</object>
       <objects name="obj_menu">
         <object>objects\obj_menu_options_title</object>
         <object>objects\obj_menu_options_lang</object>
       </objects>
+      <objects name="lang_set">
+        <object>objects\obj_lang_set_sk</object>
+        <object>objects\obj_lang_set_en</object>
+        <object>objects\obj_lang_set_title</object>
+      </objects>
+      <object>objects\obj_boot_lang_timer</object>
     </objects>
     <object>objects\obj_splash_screen</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>
     <room>rooms\rm_splash_screen</room>
+    <room>rooms\rm_lang_set</room>
     <room>rooms\rm_mainMenu</room>
-    <room>rooms\rm_newgame</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_lang</room>
+    <room>rooms\rm_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

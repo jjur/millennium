@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ini_open("settings.ini");
+            <string>/*ini_open("settings.ini");
 var language = ini_read_real("global", "language", 0);  
 ini_close();
 
@@ -33,7 +33,7 @@ if language == 1
     {
         lang_sk();
     }
-else
+if language == 0 
     {
         lang_en();
     }

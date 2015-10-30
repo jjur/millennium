@@ -1,4 +1,4 @@
-if (file_exists("settings.ini"))
+/*if (file_exists("settings.ini"))
     {
         ini_open("settings.ini");
         var global.language = ini_read_real("global", "language", 0);

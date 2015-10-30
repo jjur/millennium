@@ -14,9 +14,11 @@
 global.ambientSound = ini_read_real("sound", "ambient", 50);
 global.effectSound = ini_read_real("sound", "effect", 50);
 global.musicSound = ini_read_real("sound", "music", 50);
-//global.language = ini_read_real("global", "language", "english");  
-ini_write_real("global", "language", 0)
+ini_write_real("global", "language", 0);
 ini_close();
+
+lang_en();
+scr_color();
 
 var base_w = 1920;
 var base_h = 1080;
@@ -86,9 +88,7 @@ room_goto(rm_splash_screen);</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances>
-    <instance objName="obj_set_lang" x="0" y="0" name="inst_7445ECD1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-  </instances>
+  <instances/>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
