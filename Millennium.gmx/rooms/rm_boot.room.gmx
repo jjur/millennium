@@ -18,7 +18,7 @@ ini_write_real("global", "language", 0);
 ini_close();
 
 lang_en();
-scr_color();
+
 
 var base_w = 1920;
 var base_h = 1080;

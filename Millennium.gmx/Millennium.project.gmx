@@ -80,11 +80,11 @@
     <script>scripts\scr_saveoption.gml</script>
     <script>scripts\lang_en.gml</script>
     <script>scripts\scr_lang_change.gml</script>
-    <script>scripts\scr_color.gml</script>
     <scripts name="save">
       <script>scripts\scr_save.gml</script>
       <script>scripts\scr_load.gml</script>
     </scripts>
+    <script>scripts\scr_mouse_on_button.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fn_h2</font>
@@ -108,7 +108,6 @@
       <object>objects\obj_button_continue</object>
       <object>objects\obj_button_info</object>
       <object>objects\obj_button_exit</object>
-      <object>objects\obj_button_sound</object>
       <object>objects\obj_button_close</object>
       <object>objects\obj_button_save</object>
       <object>objects\obj_button_left</object>
