@@ -57,6 +57,10 @@
     <sprites name="ine">
       <sprite>sprites\filter</sprite>
       <sprite>sprites\spr_mouse_click</sprite>
+      <sprite>sprites\spr_mouse_build</sprite>
+      <sprite>sprites\spr_create</sprite>
+      <sprite>sprites\spr_destroy</sprite>
+      <sprite>sprites\spr_change</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -96,6 +100,7 @@
     <font>fonts\font_option</font>
     <font>fonts\font_suboption</font>
     <font>fonts\font0</font>
+    <font>fonts\fn_game</font>
   </fonts>
   <objects name="objects">
     <objects name="save">
@@ -112,6 +117,7 @@
       <object>objects\obj_button_save</object>
       <object>objects\obj_button_left</object>
       <object>objects\obj_button_right</object>
+      <object>objects\obj_create</object>
     </objects>
     <objects name="hlina">
       <object>objects\obj_hlina</object>
@@ -125,6 +131,7 @@
     <objects name="ine">
       <object>objects\obj_filter</object>
       <object>objects\obj_clicked_title</object>
+      <object>objects\obj_click_menu</object>
     </objects>
     <object>objects\obj_invent_grav</object>
     <object>objects\obj_invent</object>
