@@ -1,6 +1,6 @@
 var file,n0,n1,inst,xx,yy;
 
-file = get_open_filename("*.*","savefile.ini");
+file = "savefile.ini";
 ini_open(file);
 n0 = 0;
 n1 = 0;

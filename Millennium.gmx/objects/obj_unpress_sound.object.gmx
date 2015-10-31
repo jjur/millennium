@@ -8,33 +8,28 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="10" enumb="1">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>211</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>
-    
-if keyboard_check(ord("I"))
-    {
-        scr_save();
-        sound_play(snd_menu);
-        room_goto(rm_mainMenu);
-        
-    }
-</string>
+            <kind>6</kind>
+            <sound>snd_menu</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>

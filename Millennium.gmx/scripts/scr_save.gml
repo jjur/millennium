@@ -1,5 +1,5 @@
 var file,inst_num,n0,n1,inst;
-file = get_save_filename("*.*","savefile.ini");
+file = "savefile.ini";
 if file_exists(file)
     {
         file_delete(file);
