@@ -7,7 +7,10 @@
     <extension index="0">extensions\HOA gGUI - Graphical Interface</extension>
     <extension index="1">extensions\Simple string input</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_menu</sound>
+    <sound>sound\snd_mouse_click</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="masky">
       <sprite>sprites\mask_filter</sprite>
@@ -38,7 +41,6 @@
           <sprite>sprites\spr_button_menu_game</sprite>
         </sprites>
         <sprite>sprites\sprite23</sprite>
-        <sprite>sprites\spr_menu_title</sprite>
         <sprites name="sound">
           <sprite>sprites\spr_hslider</sprite>
           <sprite>sprites\spr_hbar</sprite>
@@ -50,6 +52,7 @@
       <sprites name="new_game">
         <sprite>sprites\spr_sprite_view</sprite>
       </sprites>
+      <sprite>sprites\spr_saved</sprite>
     </sprites>
     <sprites name="ine">
       <sprite>sprites\filter</sprite>
@@ -57,8 +60,15 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bgk_options</background>
-    <background>background\bgk_sound</background>
+    <backgrounds name="menu">
+      <background>background\bkg_menu</background>
+      <background>background\bgk_splash_screen</background>
+      <background>background\bgk_lang_set</background>
+    </backgrounds>
+    <backgrounds name="splash">
+      <background>background\bgk_splash1</background>
+      <background>background\bgk_splash2</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -71,6 +81,10 @@
     <script>scripts\lang_en.gml</script>
     <script>scripts\scr_lang_change.gml</script>
     <script>scripts\scr_color.gml</script>
+    <scripts name="save">
+      <script>scripts\scr_save.gml</script>
+      <script>scripts\scr_load.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fn_h2</font>
@@ -84,6 +98,10 @@
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
+    <objects name="save">
+      <object>objects\obj_Save_Object</object>
+      <object>objects\obj_Controll</object>
+    </objects>
     <objects name="Buttons">
       <object>objects\obj_button_parrent</object>
       <object>objects\obj_button_start</object>
@@ -116,7 +134,6 @@
       <object>objects\obj_rebrik</object>
     </objects>
     <objects name="Menu">
-      <object>objects\obj_title</object>
       <objects name="obj_menu">
         <object>objects\obj_menu_options_title</object>
         <object>objects\obj_menu_options_lang</object>
@@ -129,14 +146,19 @@
       <object>objects\obj_boot_lang_timer</object>
     </objects>
     <object>objects\obj_splash_screen</object>
+    <objects name="sound">
+      <object>objects\obj_play_sound</object>
+      <object>objects\obj_stop_sound</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>
     <room>rooms\rm_splash_screen</room>
+    <room>rooms\rm_splash_screen1</room>
     <room>rooms\rm_lang_set</room>
     <room>rooms\rm_mainMenu</room>
-    <room>rooms\rm_options</room>
     <room>rooms\rm_lang</room>
+    <room>rooms\rm_continue</room>
     <room>rooms\rm_credits</room>
   </rooms>
   <help>

@@ -1,1 +1,1 @@
-global.color = c_white
+global.color = $2f2545

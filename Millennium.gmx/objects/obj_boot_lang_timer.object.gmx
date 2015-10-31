@@ -79,7 +79,7 @@ then exit
     
 else
 
-        room_goto(rm_mainMenu)
+        room_goto_next()
 
 </string>
           </argument>

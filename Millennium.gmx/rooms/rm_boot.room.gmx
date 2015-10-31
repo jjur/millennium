@@ -37,6 +37,7 @@ else
     }
 surface_resize(application_surface, ww, hh);
 
+
 //inicializácia inventára
 globalvar showInv;
 showInv = false;

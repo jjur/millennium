@@ -3,9 +3,9 @@
   <spriteName>spr_rebrik</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>10</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_Save_Object</parentName>
   <maskName>mask_64x64</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>

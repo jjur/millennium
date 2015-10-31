@@ -10,7 +10,7 @@
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>lang_sk();
+  <code>room_restart();
 global.mys = 0;   //nastavenie myši
 global.move = 6;  // rychlosť
 ///////////////////////skript na peknú veľkosť
@@ -811,6 +811,7 @@ for (i=0; i &lt; maxItems; i+=1){
     <instance objName="obj_rebrik" x="4288" y="1728" name="inst_6C300BBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rebrik" x="4288" y="1664" name="inst_937A8C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rebrik" x="4288" y="1600" name="inst_5DA173C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Controll" x="128" y="0" name="inst_ECB64EF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="4032" y="1664" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_9385AA99" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
