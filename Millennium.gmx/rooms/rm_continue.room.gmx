@@ -10,7 +10,7 @@
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>//scr_load();
+  <code>scr_load();
 global.mys = 0;   //nastavenie myši
 global.move = 6;  // rychlosť
 ///////////////////////skript na peknú veľkosť
