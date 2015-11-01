@@ -25,7 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>colour = $2f2545
+            <string>colour = $2f2545;
+
+if file_exists("savefile.ini")
+    {
+        stav = true
+        
+    }
+
+else
+{
+    stav = false;
+    
+}
 </string>
           </argument>
         </arguments>
@@ -94,7 +106,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_continue);
+            <string>if file_exists("savefile.ini")
+    {
+        room_goto(rm_continue);
+        
+    }
+
+else
+{
+   
+    
+}
 </string>
           </argument>
         </arguments>
@@ -117,12 +139,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
-draw_set_color(colour);
-draw_set_font(font2);
-draw_text(x,y,global.txt_button_continue);
+            <string>if stav == true
+{
+    draw_self();
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(colour);
+    draw_set_font(font2);
+    draw_text(x,y,global.txt_button_continue);
+}
+
+if stav == false
+{
+    draw_self();
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_black);
+    draw_set_font(font2);
+    draw_text(x,y,global.txt_button_continue);
+}
 
 
 </string>

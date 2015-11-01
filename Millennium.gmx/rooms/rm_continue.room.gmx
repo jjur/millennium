@@ -11,6 +11,7 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>scr_load();
+scr_loaditem();
 global.mys = 0;   //nastavenie myši
 global.move = 6;  // rychlosť
 ///////////////////////skript na peknú veľkosť

@@ -63,6 +63,10 @@
         <sprite>sprites\spr_sprite_view</sprite>
       </sprites>
       <sprite>sprites\spr_saved</sprite>
+      <sprites name="window">
+        <sprite>sprites\spr_bgkwindow</sprite>
+        <sprite>sprites\spr_window</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_close_inv</sprite>
   </sprites>
@@ -89,7 +93,10 @@
     <script>scripts\scr_lang_change.gml</script>
     <scripts name="save">
       <script>scripts\scr_save.gml</script>
+      <script>scripts\scr_save_new.gml</script>
       <script>scripts\scr_load.gml</script>
+      <script>scripts\scr_saveitem.gml</script>
+      <script>scripts\scr_loaditem.gml</script>
     </scripts>
     <script>scripts\scr_mouse_on_button.gml</script>
   </scripts>
@@ -97,6 +104,7 @@
     <font>fonts\fn_h2</font>
     <font>fonts\fn_inv_num</font>
     <font>fonts\font2</font>
+    <font>fonts\font10</font>
     <font>fonts\font3</font>
     <font>fonts\font4</font>
     <font>fonts\font_millenium</font>
@@ -104,6 +112,7 @@
     <font>fonts\font_suboption</font>
     <font>fonts\font0</font>
     <font>fonts\fn_game</font>
+    <font>fonts\font11</font>
   </fonts>
   <objects name="objects">
     <objects name="Buttons">
@@ -163,6 +172,9 @@
     </objects>
     <object>objects\obj_draw_invent_mini</object>
     <object>objects\obj_close_invent</object>
+    <objects name="window">
+      <object>objects\obj_window</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>

@@ -52,6 +52,7 @@ y=view_yview;
           <argument>
             <kind>1</kind>
             <string>scr_save();
+scr_saveitem();
 room_goto(rm_mainMenu);
 </string>
           </argument>

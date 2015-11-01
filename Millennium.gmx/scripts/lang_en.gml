@@ -1,5 +1,6 @@
 global.txt_button_start = "New game";
 global.txt_button_continue = "Continue";
+
 global.txt_button_info = "Credits";
 global.txt_button_exit = "Exit";
 global.txt_button_save = "Save";
