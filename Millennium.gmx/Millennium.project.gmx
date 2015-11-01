@@ -12,6 +12,14 @@
     <sound>sound\snd_mouse_click</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="ine">
+      <sprite>sprites\filter</sprite>
+      <sprite>sprites\spr_mouse_click</sprite>
+      <sprite>sprites\spr_mouse_build</sprite>
+      <sprite>sprites\spr_create</sprite>
+      <sprite>sprites\spr_destroy</sprite>
+      <sprite>sprites\spr_change</sprite>
+    </sprites>
     <sprites name="masky">
       <sprite>sprites\mask_filter</sprite>
       <sprite>sprites\mask_64x64</sprite>
@@ -31,6 +39,8 @@
       </sprites>
       <sprites name="gui">
         <sprite>sprites\spr_slot</sprite>
+        <sprite>sprites\spr_menu_but</sprite>
+        <sprite>sprites\spr_invent</sprite>
         <sprite>sprites\spr_invent_items</sprite>
       </sprites>
       <sprites name="menu">
@@ -54,14 +64,7 @@
       </sprites>
       <sprite>sprites\spr_saved</sprite>
     </sprites>
-    <sprites name="ine">
-      <sprite>sprites\filter</sprite>
-      <sprite>sprites\spr_mouse_click</sprite>
-      <sprite>sprites\spr_mouse_build</sprite>
-      <sprite>sprites\spr_create</sprite>
-      <sprite>sprites\spr_destroy</sprite>
-      <sprite>sprites\spr_change</sprite>
-    </sprites>
+    <sprite>sprites\spr_close_inv</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="menu">
@@ -103,21 +106,19 @@
     <font>fonts\fn_game</font>
   </fonts>
   <objects name="objects">
-    <objects name="save">
-      <object>objects\obj_Save_Object</object>
-      <object>objects\obj_Controll</object>
-    </objects>
     <objects name="Buttons">
-      <object>objects\obj_button_parrent</object>
-      <object>objects\obj_button_start</object>
-      <object>objects\obj_button_continue</object>
-      <object>objects\obj_button_info</object>
-      <object>objects\obj_button_exit</object>
       <object>objects\obj_button_close</object>
-      <object>objects\obj_button_save</object>
+      <object>objects\obj_button_continue</object>
+      <object>objects\obj_button_exit</object>
+      <object>objects\obj_button_info</object>
       <object>objects\obj_button_left</object>
+      <object>objects\obj_button_parrent</object>
       <object>objects\obj_button_right</object>
+      <object>objects\obj_button_save</object>
+      <object>objects\obj_button_start</object>
       <object>objects\obj_create</object>
+      <object>objects\obj_invent_button</object>
+      <object>objects\obj_menu_butt</object>
     </objects>
     <objects name="hlina">
       <object>objects\obj_hlina</object>
@@ -125,19 +126,10 @@
     <objects name="hraci">
       <object>objects\obj_hrac</object>
     </objects>
-    <objects name="steny">
-      <object>objects\obj_hlinena_stena</object>
-    </objects>
     <objects name="ine">
       <object>objects\obj_filter</object>
       <object>objects\obj_clicked_title</object>
       <object>objects\obj_click_menu</object>
-    </objects>
-    <object>objects\obj_invent_grav</object>
-    <object>objects\obj_invent</object>
-    <object>objects\object7</object>
-    <objects name="rebriky">
-      <object>objects\obj_rebrik</object>
     </objects>
     <objects name="Menu">
       <objects name="obj_menu">
@@ -151,11 +143,26 @@
       </objects>
       <object>objects\obj_boot_lang_timer</object>
     </objects>
+    <object>objects\obj_invent</object>
+    <object>objects\obj_invent_grav</object>
     <object>objects\obj_splash_screen</object>
+    <object>objects\object7</object>
+    <objects name="rebriky">
+      <object>objects\obj_rebrik</object>
+    </objects>
+    <objects name="save">
+      <object>objects\obj_Save_Object</object>
+      <object>objects\obj_Controll</object>
+    </objects>
     <objects name="sound">
       <object>objects\obj_play_sound</object>
       <object>objects\obj_stop_sound</object>
     </objects>
+    <objects name="steny">
+      <object>objects\obj_hlinena_stena</object>
+    </objects>
+    <object>objects\obj_draw_invent_mini</object>
+    <object>objects\obj_close_invent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>

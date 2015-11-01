@@ -9,4 +9,4 @@ global.txt_lang_sk = "Slovenčina";
 global.txt_lang_en = "English";
 global.txt_menu_option_title = "Nastavenia";
 global.txt_menu_option_lang = "Jazyk";
-global.txt_new_game_player_title = "Meno hráča:"
+global.txt_new_game_player_title = "Meno hráča:";

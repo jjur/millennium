@@ -42,6 +42,7 @@ for (i=0; i &lt; maxItems; i+=1){
     ins = instance_create((view_xview+350+(floor(i mod 9)*150)),(view_yview+350+(floor(i div 9)*150)),obj_invent);
     ins.pos = i;
 }
+instance_create(view_xview,view_yview,obj_close_invent);
 </string>
           </argument>
         </arguments>
@@ -81,6 +82,20 @@ for (i=0; i &lt; maxItems; i+=1){
         <functionname>action_kill_object</functionname>
         <codestring></codestring>
         <whoName>obj_invent</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>obj_close_invent</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>

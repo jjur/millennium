@@ -19,9 +19,9 @@
     <option_android_arch_mipsr2>false</option_android_arch_mipsr2>
     <option_android_arch_mipsr2sf>false</option_android_arch_mipsr2sf>
     <option_android_arch_x86>True</option_android_arch_x86>
-    <option_android_build_version>0</option_android_build_version>
+    <option_android_build_version>1</option_android_build_version>
     <option_android_color_depth>0</option_android_color_depth>
-    <option_android_display_name>Millennium</option_android_display_name>
+    <option_android_display_name>Another Planet</option_android_display_name>
     <option_android_google_analytics_enable>false</option_android_google_analytics_enable>
     <option_android_google_play>0</option_android_google_play>
     <option_android_google_play_id></option_android_google_play_id>
@@ -49,7 +49,7 @@
     <option_android_ouya_icon>Configs\Default\android\icons\ouyaIcon.png</option_android_ouya_icon>
     <option_android_package_company>pakrapot</option_android_package_company>
     <option_android_package_domain>sk</option_android_package_domain>
-    <option_android_package_product>millennium</option_android_package_product>
+    <option_android_package_product>another_planet</option_android_package_product>
     <option_android_permission_flags>8</option_android_permission_flags>
     <option_android_pocketchange_enable>0</option_android_pocketchange_enable>
     <option_android_pocketchange_id></option_android_pocketchange_id>
