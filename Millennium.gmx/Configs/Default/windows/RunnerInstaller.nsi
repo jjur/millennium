@@ -27,11 +27,11 @@
 !endif
 
 !ifndef COPYRIGHT_TXT
-!define COPYRIGHT_TXT     "(c)Copyright 2013"
+!define COPYRIGHT_TXT     "(c)Copyright 2015"
 !endif
 
 !ifndef FILE_DESC
-!define FILE_DESC         "Created with GameMaker:Studio"
+!define FILE_DESC         "Another Planet by Millennium"
 !endif
 
 !ifndef LICENSE_NAME
@@ -51,11 +51,11 @@
 !endif
 
 !ifndef PRODUCT_NAME
-!define PRODUCT_NAME      "Runner"
+!define PRODUCT_NAME      "Another Planet"
 !endif
 
-!define APP_NAME        "${PRODUCT_NAME}"
-!define SHORT_NAME        "${PRODUCT_NAME}"
+!define APP_NAME        "Another Planet by Millennium"
+!define SHORT_NAME        "Another Planet"
 
 !ifndef EXE_NAME
 !define EXE_NAME "${PRODUCT_NAME}"
@@ -94,7 +94,7 @@ VIProductVersion "${FULL_VERSION}"
 VIAddVersionKey /LANG=1033 "FileVersion" "${FULL_VERSION}"
 VIAddVersionKey /LANG=1033 "ProductVersion" "${FULL_VERSION}"
 VIAddVersionKey /LANG=1033 "ProductName" "${PRODUCT_NAME}"
-VIAddVersionKey /LANG=1033 "CompanyName" "${PRODUCT_PUBLISHER}"
+VIAddVersionKey /LANG=1033 "CompanyName" "Millennium"
 VIAddVersionKey /LANG=1033 "LegalCopyright" "${COPYRIGHT_TXT}"
 VIAddVersionKey /LANG=1033 "FileDescription" "${FILE_DESC}"
 

@@ -45,6 +45,7 @@
       <sprites name="gui">
         <sprite>sprites\spr_slot</sprite>
         <sprite>sprites\spr_menu_but</sprite>
+        <sprite>sprites\spr_close_inv</sprite>
         <sprite>sprites\spr_invent_pozadie</sprite>
         <sprite>sprites\spr_invent</sprite>
         <sprite>sprites\spr_invent_items</sprite>
@@ -74,9 +75,13 @@
         <sprite>sprites\spr_window</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_close_inv</sprite>
   </sprites>
   <backgrounds name="background">
+    <backgrounds name="svety">
+      <background>background\bg_svet1</background>
+      <background>background\bg_svet2</background>
+      <background>background\bg_svet3</background>
+    </backgrounds>
     <backgrounds name="menu">
       <background>background\bkg_menu</background>
       <background>background\bgk_splash_screen</background>
@@ -137,6 +142,11 @@
     </objects>
     <objects name="hlina">
       <object>objects\obj_hlina</object>
+      <object>objects\obj_travnik</object>
+      <object>objects\obj_zlato</object>
+      <object>objects\obj_kamen</object>
+      <object>objects\obj_zelezo</object>
+      <object>objects\obj_uhlie</object>
     </objects>
     <objects name="hraci">
       <object>objects\obj_hrac</object>
@@ -181,6 +191,12 @@
     <objects name="window">
       <object>objects\obj_window</object>
     </objects>
+    <objects name="parents">
+      <object>objects\par_blok</object>
+    </objects>
+    <object>objects\obj_bg1</object>
+    <object>objects\obj_bg2</object>
+    <object>objects\obj_bg3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>

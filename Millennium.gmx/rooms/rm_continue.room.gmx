@@ -36,12 +36,7 @@ surface_resize(application_surface, ww, hh);
 globalvar showInv;
 showInv = false;
 globalvar maxItems;
-maxItems = 36;   
-
-for (i=0; i &lt; maxItems; i+=1){
-    global.inventory[i] = -1;
-    global.inventory_num[i] = 0;
-}</code>
+maxItems = 36;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -84,7 +79,6 @@ for (i=0; i &lt; maxItems; i+=1){
   <instances>
     <instance objName="obj_filter" x="0" y="0" name="inst_19413ADE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Controll" x="128" y="0" name="inst_ECB64EF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stop_sound" x="64" y="0" name="inst_7290AED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="4032" y="1664" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_9385AA99" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

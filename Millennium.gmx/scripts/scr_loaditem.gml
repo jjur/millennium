@@ -1,3 +1,12 @@
+ini_open("saveinvent.ini");
+for (i=0; i < maxItems; i+=1){
+global.inventory[i] = ini_read_real("item_inventory", "l"+string(i), -1);
+global.inventory_num[i] = ini_read_real("item_num", "m"+string(i), 0);
+}
+ini_close();
+
+
+
 /*var file,n0,n1,inst,xx,yy;
 
 file = "savefile.ini";
@@ -34,3 +43,4 @@ ds_list_read(global.in, listAsString)
 global.inventory = ds_list_find_value(global.in,0)
 global.inventory_num = ds_list_find_value(global.in,1)
 */
+

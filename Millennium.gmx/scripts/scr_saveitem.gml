@@ -1,3 +1,23 @@
+var file2;
+file2 = "saveinvent.ini";
+if file_exists(file2)
+    {
+        file_delete(file2);
+    }
+ini_open(file2);
+for (i=0; i < maxItems; i+=1){
+ini_write_real("item_inventory", "l"+string(i), global.inventory[i]);
+}
+for (i=0; i < maxItems; i+=1){
+ini_write_real("item_num", "m"+string(i), global.inventory_num[i]);
+}
+ini_close();
+
+
+
+
+
+
 /*var file,n0,n1,inst;
 file = "savefile.ini";
 

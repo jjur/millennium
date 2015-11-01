@@ -10,7 +10,10 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>for (i=0; i &lt; maxItems; i+=1){
+    global.inventory[i] = -1;
+    global.inventory_num[i] = 0;
+}</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
