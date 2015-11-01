@@ -27,12 +27,12 @@
             <kind>1</kind>
             <string>///kreslenie inventára
 for (i=0; i &lt; 6; i+=1){
-    draw_sprite(spr_slot,0,x+100 + (i*130), y)
+    draw_sprite(spr_slot,0,view_xview+100 + (i*130), view_yview)
     if (global.inventory[i] != -1){
-    draw_sprite(spr_invent_items,global.inventory[i],x+110 + (i*130), y+10);
+    draw_sprite(spr_invent_items,global.inventory[i],view_xview+110 + (i*130), view_yview+10);
     draw_set_color(c_red);
 draw_set_font(fn_inv_num);
-    draw_text(x+(i*130)+110+109,y+100,global.inventory_num[i]);}
+    draw_text(view_xview+(i*177)+110+109,view_yview+100,global.inventory_num[i]);}
 
 }
 </string>

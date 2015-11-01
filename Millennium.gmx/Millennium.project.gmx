@@ -30,6 +30,11 @@
       </sprites>
       <sprites name="hliny">
         <sprite>sprites\spr_hlina</sprite>
+        <sprite>sprites\spr_trava</sprite>
+        <sprite>sprites\spr_zlato</sprite>
+        <sprite>sprites\spr_kamen</sprite>
+        <sprite>sprites\spr_zelezo</sprite>
+        <sprite>sprites\spr_uhlie</sprite>
       </sprites>
       <sprites name="steny">
         <sprite>sprites\spr_clay_wall</sprite>
@@ -40,6 +45,7 @@
       <sprites name="gui">
         <sprite>sprites\spr_slot</sprite>
         <sprite>sprites\spr_menu_but</sprite>
+        <sprite>sprites\spr_invent_pozadie</sprite>
         <sprite>sprites\spr_invent</sprite>
         <sprite>sprites\spr_invent_items</sprite>
       </sprites>

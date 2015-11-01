@@ -39,7 +39,7 @@ for (i=0; i &lt; maxItems; i+=1){
 }*/
 for (i=0; i &lt; maxItems; i+=1){
 
-    ins = instance_create((view_xview+350+(floor(i mod 9)*150)),(view_yview+350+(floor(i div 9)*150)),obj_invent);
+    ins = instance_create((view_xview+175+(floor(i mod 9)*177)),(view_yview+233+(floor(i div 9)*177)),obj_invent);
     ins.pos = i;
 }
 instance_create(view_xview,view_yview,obj_close_invent);
@@ -151,14 +151,16 @@ draw_text((x + (1080/2)-200),y+20,global.txt_inv);*/
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_black);
-draw_set_alpha(0.8);
-draw_rectangle(0,0,room_width,room_height,0);
+            <string>//draw_set_color($2f2545);
+//draw_set_alpha(1);
+//draw_rectangle(0,0,room_width,room_height,0);
+draw_sprite(spr_invent_pozadie,0,view_xview,view_yview);
 draw_set_alpha(1);
 draw_set_font(fn_h2);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
-draw_text((view_xview + (1920/2)),view_yview+20,global.txt_inv);
+draw_set_valign(fa_center)
+draw_text((view_xview + (1920/2)),view_yview+122,global.txt_inv);
 </string>
           </argument>
         </arguments>
