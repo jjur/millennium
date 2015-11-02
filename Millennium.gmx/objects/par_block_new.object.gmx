@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Riadenie gravitacie BUG
 
-if (place_free(x,y+2 )==true) {
-y+=2
+if (place_free(x,y+3 )==true) {
+y+=3
 }
 else{}
 
