@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1002</depth>
+  <depth>-99999999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,12 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>var item = mouseItem;
-var item = mouseItem_num;
+var num = mouseItem_num;
 if (item != -1)
 {
     x = mouse_x;
     y = mouse_y;
-    draw_sprite(spr_items,item,x,y);
+    draw_sprite(spr_invent_items,item,x,y);
 }
 
 </string>

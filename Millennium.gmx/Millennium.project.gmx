@@ -151,11 +151,16 @@
     </objects>
     <objects name="hlina">
       <object>objects\obj_hlina</object>
+      <object>objects\obj_hlina_new</object>
       <object>objects\obj_travnik</object>
       <object>objects\obj_zlato</object>
+      <object>objects\obj_zlato_new</object>
       <object>objects\obj_kamen</object>
+      <object>objects\obj_kamen_new</object>
       <object>objects\obj_zelezo</object>
+      <object>objects\obj_zelezo_new</object>
       <object>objects\obj_uhlie</object>
+      <object>objects\obj_uhlie_new</object>
     </objects>
     <objects name="hraci">
       <object>objects\obj_hrac</object>
@@ -202,6 +207,7 @@
     </objects>
     <objects name="parents">
       <object>objects\par_blok</object>
+      <object>objects\par_block_new</object>
     </objects>
     <object>objects\obj_bg1</object>
     <object>objects\obj_mouseitem</object>

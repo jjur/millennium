@@ -39,14 +39,6 @@ maxItems = 36;   */
     button[i].slot = i;
 }*/
 
-globalvar mouseItem, mouseItem_num;
-mouseItem = -1;
-mouseItem_num = 0;
-instance_create(0,0,obj_mouseitem);
-
-
-
-
 
 
 
@@ -63,6 +55,10 @@ for (i=0; i &lt; maxItems; i+=1){
     ins.slot = i;
 }
 instance_create(view_xview,view_yview,obj_close_invent);
+globalvar mouseItem, mouseItem_num;
+mouseItem = -1;
+mouseItem_num = 0;
+instance_create(0,0,obj_mouseitem);
 </string>
           </argument>
         </arguments>

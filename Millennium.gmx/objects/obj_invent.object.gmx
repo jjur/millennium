@@ -53,7 +53,7 @@ if (item != -1)
     draw_sprite(spr_invent_items,item,x,y);
     draw_set_color(c_red);
 draw_set_font(fn_inv_num);
-draw_text(x+109,y+90,global.inventory_num[pos]);
+draw_text(x+109,y+90,global.inventory_num[slot]);
 }
    
 

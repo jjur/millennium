@@ -3,12 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1001</depth>
-  <persistent>-1</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <depth>0</depth>
+  <persistent>0</persistent>
+  <parentName>obj_Save_Object</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,40 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var item = global.inventory[slot];
-var num = global.inventory_num[slot];
-var click = mouse_check_button_pressed(mb_left);
+            <string>/// Riadenie gravitacie BUG
 
-if ((0 &lt; (mouse_x - x) and (mouse_x - x) &lt; 150) &amp;&amp; (0 &lt;(mouse_y - y) and (mouse_y - y) &lt; 150))
-{
-    draw_set_colour(c_white);
-    draw_rectangle(x,y,x+150,y+150,0);
-    if (click)
-    {
-        if (item != -1)
-        {
-            scr_itemdrop_slot(slot);
-        }
-        if (mouseItem != -1)
-        {
-            scr_itempickup_slot(mouseItem,slot, mouseItem_num)
-        }
-        mouseItem = item;
-        mouseItem_num = num ;
-    }
+if (place_free(x,y+2 )==true) {
+y+=2
 }
+else{}
 
-if (item != -1)
-{
-    draw_sprite(spr_invent_items,item,x,y);
-}
-   
 
-/*if (item != -1)
-{
-    draw_sprite(spr_invent_items,item,x,y);
-}*/
-   
+
 </string>
           </argument>
         </arguments>

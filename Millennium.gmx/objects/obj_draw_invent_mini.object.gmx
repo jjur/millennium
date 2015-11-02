@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(i=0;1&lt;9;i++){
+            <string>for( i=0; i &lt; 9 ; i += 1){
     global.button[i] = instance_create(0,0,obj_invbutton_mini)
     global.button[i].slot = i;
     
 }
 globalvar mouseItem, mouseItem_num;
 mouseItem = -1;
-mouseItem = 0;
+mouseItem_num = 0;
 instance_create(0,0,obj_mouseitem_mini);
 </string>
           </argument>
@@ -62,8 +62,8 @@ instance_create(0,0,obj_mouseitem_mini);
 for (i=0; i &lt; 9; i+=1){
     draw_sprite(spr_slot,0,view_xview+250 + (i*170), view_yview)
     
-    button[i].x = view_xview+270 + (i*170);
-    button[i].y = view_yview+10;
+    global.button[i].x = view_xview+250 + (i*170);
+    global.button[i].y = view_yview+0;
     
 /*    if (global.inventory[i] != -1){
     

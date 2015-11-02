@@ -29,7 +29,7 @@
 var num = global.inventory_num[slot];
 var click = mouse_check_button_pressed(mb_left);
 
-if (0 &lt; (mouse_x - x) &lt; 150) &amp;&amp; (0 &lt;(mouse_y - y) &lt; 150)
+if ((0 &lt; (mouse_x - x) and (mouse_x - x) &lt; 150) &amp;&amp; (0 &lt;(mouse_y - y) and (mouse_y - y) &lt; 150))
 {
     draw_set_colour(c_white);
     draw_rectangle(x,y,x+150,y+150,0);
@@ -41,23 +41,23 @@ if (0 &lt; (mouse_x - x) &lt; 150) &amp;&amp; (0 &lt;(mouse_y - y) &lt; 150)
         }
         if (mouseItem != -1)
         {
-            scr_itempickup_slot(mouseItem,slot, num)
+            scr_itempickup_slot(mouseItem,slot, mouseItem_num)
         }
         mouseItem = item;
+        mouseItem_num = num ;
     }
 }
 
 if (item != -1)
 {
-    draw_sprite(spr_invent_items,item,x,y);
+    draw_sprite(spr_invent_items,item,x+30,y+32);
+    draw_set_color(c_red);
+draw_set_font(fn_inv_num);
+draw_text(x+110,y+109,global.inventory_num[slot]);
 }
    
 
-if (item != -1)
-{
-    draw_sprite(spr_invent_items,item,x,y);
-}
-   
+
 </string>
           </argument>
         </arguments>
