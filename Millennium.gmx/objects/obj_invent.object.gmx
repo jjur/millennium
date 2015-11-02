@@ -25,13 +25,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (global.inventory[pos]==-1){}else{
-draw_sprite(spr_invent_items,global.inventory[pos],x+18,y+12);
-draw_set_color(c_red);
-draw_set_font(fn_inv_num)
+            <string>var item = global.inventory[slot];
+var num = global.inventory_num[slot];
+var click = mouse_check_button_pressed(mb_left);
+
+if ((0 &lt; (mouse_x - x) and (mouse_x - x)&lt; 150) and (0 &lt;(mouse_y - y) and (mouse_y - y) &lt; 150))
+{
+    draw_set_colour(c_white);
+    draw_rectangle(x,y,x+150,y+150,0);
+    if (click)
+    {
+        if (item != -1)
+        {
+            scr_itemdrop_slot(slot);
+        }
+        if (mouseItem != -1)
+        {
+            scr_itempickup_slot(mouseItem,slot, mouseItem_num)
+        }
+        mouseItem = item;
+        mouseItem_num = num;
+    }
+}
+
+if (item != -1)
+{
+    draw_sprite(spr_invent_items,item,x,y);
+    draw_set_color(c_red);
+draw_set_font(fn_inv_num);
 draw_text(x+109,y+90,global.inventory_num[pos]);
 }
+   
+
 
 
 </string>
@@ -50,7 +75,7 @@ draw_text(x+109,y+90,global.inventory_num[pos]);
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>

@@ -35,6 +35,8 @@
         <sprite>sprites\spr_kamen</sprite>
         <sprite>sprites\spr_zelezo</sprite>
         <sprite>sprites\spr_uhlie</sprite>
+        <sprite>sprites\spr_strom</sprite>
+        <sprite>sprites\spr_drevo</sprite>
       </sprites>
       <sprites name="steny">
         <sprite>sprites\spr_clay_wall</sprite>
@@ -75,6 +77,10 @@
         <sprite>sprites\spr_window</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_strom1</sprite>
+    <sprite>sprites\spr_strom2</sprite>
+    <sprite>sprites\spr_pec7</sprite>
+    <sprite>sprites\spr_stol</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="svety">
@@ -86,6 +92,7 @@
       <background>background\bkg_menu</background>
       <background>background\bgk_splash_screen</background>
       <background>background\bgk_lang_set</background>
+      <background>background\bg_credits</background>
     </backgrounds>
     <backgrounds name="splash">
       <background>background\bgk_splash1</background>
@@ -95,6 +102,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\lang_sk.gml</script>
+    <script>scripts\scr_itemdrop_slot.gml</script>
+    <script>scripts\scr_itempickup_slot.gml</script>
     <script>scripts\scr_itempickup.gml</script>
     <script>scripts\scr_itemdrop.gml</script>
     <script>scripts\scr_itemcheck.gml</script>
@@ -195,8 +204,15 @@
       <object>objects\par_blok</object>
     </objects>
     <object>objects\obj_bg1</object>
+    <object>objects\obj_mouseitem</object>
+    <object>objects\obj_mouseitem_mini</object>
+    <object>objects\obj_invbutton</object>
+    <object>objects\obj_invbutton_mini</object>
     <object>objects\obj_bg2</object>
     <object>objects\obj_bg3</object>
+    <object>objects\obj_kmen_stromu</object>
+    <object>objects\obj_strom2</object>
+    <object>objects\obj_strom1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>
