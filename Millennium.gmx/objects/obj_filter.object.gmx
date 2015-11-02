@@ -514,6 +514,107 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>obj_clicked_title</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>201</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_create_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>obj_clicked_title</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>mouse_x-31</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>mouse_y-31</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (mouseItem_num &gt; 0){
+
+switch (mouseItem)
+   {
+   case 3:
+      instance_create(mouse_x, mouse_y,obj_kmen_stromu);
+      mouseItem_num -=1; 
+      break;
+   case 4:
+      instance_create(mouse_x, mouse_y,obj_kmen_stromu);
+      mouseItem_num -=1; 
+      break;
+   case 5:
+      instance_create(mouse_x, mouse_y,obj_hlina_new);
+      mouseItem_num -=1; 
+      break;
+   case 6:
+      instance_create(mouse_x, mouse_y,obj_kamen_new);
+      mouseItem_num -=1; 
+      break;
+   case 7:
+      instance_create(mouse_x, mouse_y,obj_uhlie_new);
+      mouseItem_num -=1; 
+      break;
+   case 8:
+      instance_create(mouse_x, mouse_y,obj_zelezo_new);
+      mouseItem_num -=1; 
+      break;
+   case 9:
+      instance_create(mouse_x, mouse_y,obj_zlato_new);
+      mouseItem_num -=1; 
+      break;
+   case 10:
+      //instance_create(mouse_x, mouse_y,obj);
+      //mouseItem_num -=1; 
+      break;
+   }}else{mouseItem=-1;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

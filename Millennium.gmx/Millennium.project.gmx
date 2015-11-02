@@ -108,6 +108,7 @@
     <script>scripts\scr_itempickup.gml</script>
     <script>scripts\scr_itemdrop.gml</script>
     <script>scripts\scr_itemcheck.gml</script>
+    <script>scripts\scr_itemcheck_num.gml</script>
     <script>scripts\scr_buttonBobber.gml</script>
     <script>scripts\scr_saveoption.gml</script>
     <script>scripts\lang_en.gml</script>
@@ -168,7 +169,6 @@
     </objects>
     <objects name="ine">
       <object>objects\obj_filter</object>
-      <object>objects\mini_vstva</object>
       <object>objects\obj_clicked_title</object>
       <object>objects\obj_click_menu</object>
     </objects>
@@ -221,6 +221,9 @@
     <object>objects\obj_kmen_stromu</object>
     <object>objects\obj_strom2</object>
     <object>objects\obj_strom1</object>
+    <object>objects\obj_pec_krom</object>
+    <object>objects\obj_stol_lopata</object>
+    <object>objects\obj_stol_sekera</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_boot</room>
@@ -229,6 +232,7 @@
     <room>rooms\rm_lang_set</room>
     <room>rooms\rm_mainMenu</room>
     <room>rooms\rm_lang</room>
+    <room>rooms\room8</room>
     <room>rooms\rm_continue</room>
     <room>rooms\rm_credits</room>
   </rooms>
